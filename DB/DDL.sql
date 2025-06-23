@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS sa_t3;
 CREATE DATABASE IF NOT EXISTS sa_t3;
 
 CREATE TABLE IF NOT EXISTS sa_t3.configuration_items (
-    id INT PRIMARY KEY NOT NULL,
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nombre VARCHAR(100) NOT NULL,
     tipo VARCHAR(25) NOT NULL CHECK (tipo IN ('servidor', 'base de datos', 'aplicacion', 'otros')),
     descripcion VARCHAR(200),
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS sa_t3.configuration_items (
 );
 
 CREATE TABLE IF NOT EXISTS sa_t3.cambios_ci (
-    id INT PRIMARY KEY NOT NULL,
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     fecha DATE NOT NULL,
     descripcion VARCHAR(100),
     ci_id INT NOT NULL,
@@ -31,21 +31,21 @@ CREATE TABLE IF NOT EXISTS sa_t3.cambios_ci (
 );
 
 CREATE TABLE IF NOT EXISTS sa_t3.documentacion_ci (
-    id INT PRIMARY KEY NOT NULL,
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     url_documentacion VARCHAR(200) NOT NULL,
     ci_id INT NOT NULL,
     FOREIGN KEY (ci_id) REFERENCES configuration_items(id) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS sa_t3.incidentes_problemas_ci (
-    id INT PRIMARY KEY NOT NULL,
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     enlace VARCHAR(255) NOT NULL,
     ci_id INT NOT NULL,
     FOREIGN KEY (ci_id) REFERENCES configuration_items(id) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS sa_t3.relaciones_ci (
-    id INT PRIMARY KEY NOT NULL,
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     tipo_relacion VARCHAR(15) NOT NULL,
     ci_padre_id INT NOT NULL,
     ci_hijo_id INT NOT NULL,
