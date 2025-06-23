@@ -115,6 +115,9 @@ INSERT INTO sa_t3.incidentes_problemas_ci (id, ci_id, enlace) VALUES
 (4, 6, 'https://url_incidente_ejemplo.com');
 ```
 
+## Información en la BD
+![Swagger](./Docs/API/Data.png)
+
 ## Documentación API
 
 ![Swagger](./Docs/API/Swagger.png)
