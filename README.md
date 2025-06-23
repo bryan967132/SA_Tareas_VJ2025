@@ -116,18 +116,9 @@ INSERT INTO sa_t3.incidentes_problemas_ci (id, ci_id, enlace) VALUES
 ```
 
 ## Documentación API
-![Test1](./Docs/API/Swagger.png)
 
-![Test1](./Docs/API/Test1.png)
+![Swagger](./Docs/API/Swagger.png)
 
-![Test1](./Docs/API/Test2.png)
+![Swagger](./Docs/API/Test1.png)
 
-![Test1](./Docs/API/Test3.png)
-
-![Test1](./Docs/API/Test4.png)
-
-![Test1](./Docs/API/Test5.png)
-
-![Test1](./Docs/API/Test6.png)
-
-![Test1](./Docs/API/Test7.png)
+![Swagger](./Docs/API/Test2.png)
