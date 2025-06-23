@@ -15,7 +15,7 @@ ___
 ### ER
 ![ER](./Docs/Images/ER.png)
 
-### Script de Base de Datos
+## Script de Base de Datos
 ```sql
 DROP DATABASE IF EXISTS sa_t3;
 CREATE DATABASE IF NOT EXISTS sa_t3;
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS sa_t3.relaciones_ci (
 );
 ```
 
-### Seeds
+## Seeds
 ```sql
 INSERT INTO sa_t3.configuration_items (id, nombre, tipo, descripcion, numero_serie, version, fecha_adquisicion, estado_actual, ubicacion_fisica, propietario_responsable, niveles_seguridad, cumplimiento, estado_configuracion, numero_licencia, fecha_vencimiento, ambiente)
 VALUES 
@@ -114,3 +114,20 @@ INSERT INTO sa_t3.incidentes_problemas_ci (id, ci_id, enlace) VALUES
 (3, 5, 'https://url_incidente_ejemplo.com'),
 (4, 6, 'https://url_incidente_ejemplo.com');
 ```
+
+## Documentación API
+![Test1](./Docs/API/Swagger.png)
+
+![Test1](./Docs/API/Test1.png)
+
+![Test1](./Docs/API/Test2.png)
+
+![Test1](./Docs/API/Test3.png)
+
+![Test1](./Docs/API/Test4.png)
+
+![Test1](./Docs/API/Test5.png)
+
+![Test1](./Docs/API/Test6.png)
+
+![Test1](./Docs/API/Test7.png)
